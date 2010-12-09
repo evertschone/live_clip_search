@@ -4,7 +4,7 @@ from live_clip_search_gui import LiveClipSearchGui
 from live_clip_search_server import LiveClipSearchServer
 
 LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-LOG_LEVEL = logging.DEBUG
+LOG_LEVEL = logging.INFO
 
 class LiveClipSearch:
     def __init__(self):

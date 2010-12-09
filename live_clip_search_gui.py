@@ -103,11 +103,7 @@ class LiveClipSearchGui(Thread):
         self._name_entry = Entry(self._top_frame, font = font)
         self._name_entry.pack(fill = X)
         self._name_entry.bind("<KeyRelease>", self._find)
-        
-        #self._find_button = Button(self._mid_frame, text = "Find", 
-        #                           command=self._find)
-        #self._find_button.pack(fill = X)
-        
+
         self._y_scroll = Scrollbar(self._bottom_frame)
         self._y_scroll.pack(side = RIGHT, fill = Y)
         
@@ -118,11 +114,3 @@ class LiveClipSearchGui(Thread):
         self._clip_name_list.pack(fill = BOTH, expand = 1)
         
         self._y_scroll.config(command=self._clip_name_list.yview)
-        
-        #self._play_button = Button(self._bottom_frame, text = "PLAY", 
-        #                           fg = "green", command = self._play)
-        #self._play_button.pack(fill = X)
-        
-        #self._quit_button = Button(self._bottom_frame, text = "QUIT", 
-        #                           fg = "red", command=self._quit)
-        #self._quit_button.pack(fill = X)
